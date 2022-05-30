@@ -1,0 +1,21 @@
+export const siteMetadata = {
+  title: 'Portfolio Edwin van Wijngaarden',
+  author: 'Edwin van Wijngaarden',
+  headerTitle: '',
+  description: '',
+  language: 'nl-NL',
+  theme: 'system',
+  siteUrl: 'https://edwinvanwijngaarden.dev',
+  siteRepo: '',
+  siteLogo: '',
+  image: '',
+  socialBanner: '',
+  email: 'edwin.wijngaarden@live.nl',
+  github: 'https://github.com/Edjevw12',
+  twitter: 'https://twitter.com/Edwinvw12',
+  linkedIn: 'https://www.linkedin.com/in/edwinvanwijngaarden/',
+  analytics: {
+    plausibleDataDomain: '',
+    simpleAnalytics: false,
+  },
+};
