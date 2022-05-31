@@ -1,5 +1,6 @@
 import { navLinks } from '@/data/navLinks';
 import Link from 'next/link';
+import DarkModeButton from '../Button/DarkModeButton';
 
 export const Nav = () => {
   return (
@@ -16,13 +17,16 @@ export const Nav = () => {
             </a>
           </Link>
         </div>
-        <ul className="flex">
-          {navLinks.map((link) => (
-            <li className="pl-5 py-2" key={link.title}>
-              {link.title}
-            </li>
-          ))}
-        </ul>
+        <div className="flex gap-8 content-center">
+          <ul className="flex gap-8">
+            {navLinks.map((link) => (
+              <li className="align-text-center" key={link.title}>
+                {link.title}
+              </li>
+            ))}
+          </ul>
+          <DarkModeButton />
+        </div>
       </nav>
     </div>
   );
