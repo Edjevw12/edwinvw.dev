@@ -12,7 +12,9 @@ export const Layout = ({ children }: Props) => {
     <div>
       <Meta />
       <Nav />
-      <main>{children}</main>
+      <main max-w-screen-lg m-auto>
+        {children}
+      </main>
       <Footer />
     </div>
   );
