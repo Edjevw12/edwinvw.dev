@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-red-600: #951822;
+  --color-pink-50: #fbf7f7;
+  --color-blue-800: #141c3a;
+  --color-black-800: #121212;
+  --color-black-900: #1d1d1d;
+}
+
 .px-5vw {
   padding-left: 5vw;
   padding-right: 5vw;
@@ -10,4 +18,10 @@
 .px-3vw {
   padding-left: 3vw;
   padding-right: 3vw;
+}
+
+@layer utilities {
+  .focus-ring {
+    @apply focus:outline-none focus-within:outline-none ring-team-current ring-offset-4 ring-offset-white transition duration-300 focus-within:ring-2 focus-within:ring-team-current hover:ring-2 hover:ring-team-current focus:ring-2 focus:ring-team-current disabled:ring-0 group-hover:ring-2 group-hover:ring-team-current group-focus:ring-2 group-focus:ring-team-current dark:ring-offset-gray-900;
+  }
 }

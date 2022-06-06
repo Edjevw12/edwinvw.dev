@@ -12,8 +12,9 @@ export const Nav = () => {
       >
         <div>
           <Link href="/">
-            <a className="text-2xl">
-              <span className="text-main text-3xl">e</span>dwinvw.dev
+            <a className="text-2xl text-bold">
+              <span className="text-red-600">e</span>
+              dwinvw.dev
             </a>
           </Link>
         </div>

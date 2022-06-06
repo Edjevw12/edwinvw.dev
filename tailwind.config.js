@@ -11,19 +11,45 @@ module.exports = {
       sans: ['Archivo', 'sans-serif'],
     },
     colors: {
-      main: '#951822',
+      red: {
+        600: 'var(--color-red-600)',
+      },
       pink: {
-        50: '#FBF7F7',
+        50: 'var(--color-pink-50)',
       },
       blue: {
-        600: '#141C3A',
+        800: 'var(--color-blue-800)',
       },
       black: {
-        800: '#121212',
-        900: '#1D1D1D',
+        800: 'var(--color-black-800)',
+        900: 'var(--color-black-900)',
       },
     },
-    extend: {},
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            a: {
+              '&:hover': {},
+              textDecorationColor: theme('colors.teal.500'),
+              textUnderlineOffset: '3px',
+              textDecorationStyle: 'decoration-solid',
+            },
+          },
+        },
+        dark: {
+          css: {
+            a: {
+              '&:hover': {},
+              textDecorationColor: theme('colors.teal.800'),
+              textUnderlineOffset: '3px',
+              textDecorationStyle: 'decoration-solid',
+            },
+          },
+        },
+      }),
+    },
   },
+
   plugins: [],
 };
