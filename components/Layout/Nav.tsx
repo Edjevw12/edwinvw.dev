@@ -1,5 +1,6 @@
 import { navLinks } from '@/data/navLinks';
 import Link from 'next/link';
+import Button from '@/components/Button/Button';
 import DarkModeButton from '../Button/DarkModeButton';
 
 export const Nav = () => {
@@ -26,6 +27,9 @@ export const Nav = () => {
               </li>
             ))}
           </ul>
+          <Button variant="primary" onClick={() => alert('contact')}>
+            Contact
+          </Button>
           <DarkModeButton />
         </div>
       </nav>

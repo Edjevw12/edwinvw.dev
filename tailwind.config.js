@@ -11,6 +11,7 @@ module.exports = {
       sans: ['Archivo', 'sans-serif'],
     },
     colors: {
+      white: '#ffff',
       red: {
         600: 'var(--color-red-600)',
       },

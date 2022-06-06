@@ -1,4 +1,1 @@
-export const navLinks = [
-  { href: '/blog', title: 'Blog' },
-  { href: '/contact', title: 'Contact' },
-];
+export const navLinks = [{ href: '/blog', title: 'Blog' }];
