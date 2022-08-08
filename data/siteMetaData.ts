@@ -14,8 +14,4 @@ export const siteMetadata = {
   github: 'https://github.com/Edjevw12',
   twitter: 'https://twitter.com/Edwinvw12',
   linkedIn: 'https://www.linkedin.com/in/edwinvanwijngaarden/',
-  analytics: {
-    plausibleDataDomain: '',
-    simpleAnalytics: false,
-  },
 };

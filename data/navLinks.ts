@@ -1,1 +1,3 @@
-export const navLinks = [{ href: '/blog', title: 'Blog' }];
+import { NavLink } from '@/lib/types';
+
+export const navLinks: NavLink[] = [];

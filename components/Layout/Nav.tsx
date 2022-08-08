@@ -5,7 +5,7 @@ import DarkModeButton from '../Button/DarkModeButton';
 
 export const Nav = () => {
   return (
-    <div className="px-3vw lg:px-5vw py-9 lg:py-12">
+    <div className="py-9 lg:py-12">
       <nav
         id="header"
         role="navigation"

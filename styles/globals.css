@@ -10,14 +10,14 @@
   --color-black-900: #1d1d1d;
 }
 
-.px-5vw {
-  padding-left: 5vw;
-  padding-right: 5vw;
+.px-7vw {
+  padding-left: 7vw;
+  padding-right: 7vw;
 }
 
-.px-3vw {
-  padding-left: 3vw;
-  padding-right: 3vw;
+.px-4vw {
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 
 @layer utilities {
