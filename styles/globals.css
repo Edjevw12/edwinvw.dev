@@ -3,7 +3,14 @@
 @tailwind utilities;
 
 :root {
+  --color-red-50: #f4e8e9;
+  --color-red-100: #ead1d3;
+  --color-red-200: #d5a3a7;
+  --color-red-400: #b55d64;
+  --color-red-500: #a02f38;
   --color-red-600: #951822;
+  --color-red-800: #590e14;
+  --color-red-900: #2d070a;
   --color-pink-50: #fbf7f7;
   --color-blue-800: #141c3a;
   --color-black-800: #121212;
@@ -20,8 +27,30 @@
   padding-right: 4vw;
 }
 
-@layer utilities {
-  .focus-ring {
-    @apply focus:outline-none focus-within:outline-none ring-team-current ring-offset-4 ring-offset-white transition duration-300 focus-within:ring-2 focus-within:ring-team-current hover:ring-2 hover:ring-team-current focus:ring-2 focus:ring-team-current disabled:ring-0 group-hover:ring-2 group-hover:ring-team-current group-focus:ring-2 group-focus:ring-team-current dark:ring-offset-gray-900;
+a {
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 700;
+  font-family: Archivo;
+}
+
+.background-animate {
+  background-size: 400%;
+  -webkit-animation: GradientAnimation 5s ease-in-out infinite;
+  -moz-animation: GradientAnimation 5s ease-in-out infinite;
+  animation: GradientAnimation 5s ease-in-out infinite;
+}
+
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 75%;
+  }
+  100% {
+    background-position: 0% 75%;
   }
 }

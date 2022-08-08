@@ -1,12 +1,12 @@
-import { ButtonVariant } from '@/lib/types';
+import { ButtonVariant } from '@/lib/types'
 
 type Props = {
-  variant: ButtonVariant;
-  children: React.ReactNode;
-  onClick: () => void;
-};
+  variant: ButtonVariant
+  children: React.ReactNode
+  onClick: () => void
+}
 
-const Button = ({ variant, children, onClick }: Props) => {
+export const Button = ({ variant, children, onClick }: Props) => {
   return (
     <button
       onClick={onClick}
@@ -17,7 +17,5 @@ const Button = ({ variant, children, onClick }: Props) => {
     >
       {children}
     </button>
-  );
-};
-
-export default Button;
+  )
+}

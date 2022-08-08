@@ -1,11 +1,6 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
   darkMode: 'class',
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
       sans: ['Archivo', 'sans-serif'],
@@ -13,7 +8,14 @@ module.exports = {
     colors: {
       white: '#ffff',
       red: {
+        50: 'var(--color-red-50)',
+        100: 'var(--color-red-100)',
+        200: 'var(--color-red-200)',
+        300: 'var(--color-red-300)',
+        400: 'var(--color-red-400)',
+        500: 'var(--color-red-500)',
         600: 'var(--color-red-600)',
+        800: 'var(--color-red-800)',
       },
       pink: {
         50: 'var(--color-pink-50)',
@@ -30,27 +32,19 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            a: {
-              '&:hover': {},
-              textDecorationColor: theme('colors.teal.500'),
-              textUnderlineOffset: '3px',
-              textDecorationStyle: 'decoration-solid',
+            h1: {
+              fontSize: '2.5rem',
+              fontWeight: '700',
+              color: theme('colors.blue.800'),
             },
           },
         },
         dark: {
-          css: {
-            a: {
-              '&:hover': {},
-              textDecorationColor: theme('colors.teal.800'),
-              textUnderlineOffset: '3px',
-              textDecorationStyle: 'decoration-solid',
-            },
-          },
+          css: {},
         },
       }),
     },
   },
 
   plugins: [],
-};
+}

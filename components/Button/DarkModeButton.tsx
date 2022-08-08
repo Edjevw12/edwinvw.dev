@@ -1,14 +1,14 @@
-import React from 'react';
-import { useTheme } from 'next-themes';
-import { MoonIcon } from '@/components/icons/moon-icon';
-import { SunIcon } from '@/components/icons/sun-icon';
+import React from 'react'
+import { useTheme } from 'next-themes'
+import { MoonIcon } from '@/components/icons/moon-icon'
+import { SunIcon } from '@/components/icons/sun-icon'
 
-const DarkModeButton = () => {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === 'system' ? systemTheme : theme;
+export const DarkModeButton = () => {
+  const { systemTheme, theme, setTheme } = useTheme()
+  const currentTheme = theme === 'system' ? systemTheme : theme
 
   function toggleMode() {
-    setTheme(currentTheme === 'light' ? 'dark' : 'light');
+    setTheme(currentTheme === 'light' ? 'dark' : 'light')
   }
   return (
     <button onClick={toggleMode}>
@@ -24,7 +24,5 @@ const DarkModeButton = () => {
         )}
       </div>
     </button>
-  );
-};
-
-export default DarkModeButton;
+  )
+}
